@@ -1,0 +1,13 @@
+[project]
+name = "test-lnar-hosting-postgres"
+version = "0.1.0"
+description = "Notes CRUD MCP server backed by PostgreSQL"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.115",
+    "fastmcp>=3.2.3",
+    "httpx>=0.27",
+    "psycopg[binary]>=3.2",
+    "psycopg-pool>=3.2",
+]
