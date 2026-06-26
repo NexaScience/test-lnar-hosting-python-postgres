@@ -12,8 +12,6 @@ from pydantic import BaseModel
 
 from mcp_server import mcp
 
-# FastMCP の Streamable HTTP アプリ。`path="/"` にすることで、`/mcp` に
-# マウントしたときに最終 URL が `/mcp/` で到達できる。
 _mcp_app = mcp.http_app(path="/")
 
 # PostgreSQL への接続文字列。
